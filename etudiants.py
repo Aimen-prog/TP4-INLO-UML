@@ -118,10 +118,8 @@ class Etudiant(Personne):
         Etudiant.count = Etudiant.count + 1 #count number of students
 
 
-"""
-add one or many subjects
 
-"""
+#add one or many subjects
 
     def add_cours(self, cours):
 
@@ -130,10 +128,9 @@ add one or many subjects
         else:
             raise Exception("Invalid course/subject name")
 
-"""
-add a mark or many marks to object
 
-"""
+#add a mark or many marks to object
+
 
     def add_note(self, note):
 
