@@ -10,11 +10,10 @@ from collections import Counter
 
 """
 
-"calculer la moyenne par matière"
-" calculer la moyenne générale d’un élève"
-"afficher les matières sans notes d'un élève".
+calculer la moyenne par matière
+calculer la moyenne générale d’un élève
+afficher les matières sans notes d'un élève
 
-Implémentation en python uniquement les classes permettant de répondre à ces 3 cas d'utilisation.
 
 
 """
