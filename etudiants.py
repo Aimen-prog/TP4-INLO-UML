@@ -82,7 +82,7 @@ class Personne:
             self.num_telephone = num_telephone
         else:
             raise Exception("Invalid mobile number, should be str type and numeric")
- 
+
         regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
         if(re.fullmatch(regex, adresse_mail)):
             self.adresse_mail=adresse_mail
