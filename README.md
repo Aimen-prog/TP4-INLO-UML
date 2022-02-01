@@ -16,6 +16,8 @@ notes d'un élève".
 Diagramme UML (umbrello) complet avec les classes, variables et méthodes <b>AVANT</b> implémentation
 <br>
 Implémentation en python uniquement des classes permettant de répondre à ces 3 cas d'utilisation. 
+<br>
+<b>NOTE</b>"calculer la moyenne par matière" est implementé directement dans main.py
 
 Merci d'éxécuter le programme principal <b>main.py</b> comme suit :
 
