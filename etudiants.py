@@ -64,7 +64,7 @@ class Cours :
 
 class Personne:
 
-    def __init__(self,identifiant,nom,prenom,num_telephone,adresse_mail):  
+    def __init__(self,identifiant,nom,prenom,num_telephone,adresse_mail):
 
         if type(identifiant) == str and len(identifiant.replace(" ", "")) > 0:
             self.identifiant = identifiant
