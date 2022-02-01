@@ -24,10 +24,10 @@ class Note :
         if note_matiere is None :
             self.note_matiere=note_matiere
         elif type(note_matiere) == float or int:
-            self.note_matiere=note_matiere         
+            self.note_matiere=note_matiere
         else:
             raise Exception("Invalid mark, should be numeric")
- 
+
     def get_note(self):
         return self._note_matiere
 
@@ -45,15 +45,15 @@ class Cours :
         elif type(identifiant_cours) == str and len(identifiant_cours.replace(" ", "")) > 0:
             self.identifiant_cours=identifiant_cours
         else:
-            raise Exception("Invalid subject id, should be str")   
-        
+            raise Exception("Invalid subject id, should be str")
+
         if nom_cours is None :
-            self.nom_cours=nom_cours  
+            self.nom_cours=nom_cours
         elif type(nom_cours) == str and nom_cours.isalpha() and len(nom_cours.replace(" ", "")) > 0:
             self.nom_cours=nom_cours
         else:
-            raise Exception("Invalid subject name, should be str")   
-        
+            raise Exception("Invalid subject name, should be str")
+
     def get_cours(self):
         return self._nom_cours
 
@@ -65,8 +65,8 @@ class Cours :
 
 class Personne:
 
-    def __init__(self,identifiant,nom,prenom,num_telephone,adresse_mail):      
-    
+    def __init__(self,identifiant,nom,prenom,num_telephone,adresse_mail):  
+
         if type(identifiant) == str and len(identifiant.replace(" ", "")) > 0:
             self.identifiant = identifiant
         else:
@@ -102,30 +102,30 @@ class Personne:
 
 class Etudiant(Personne):
 
-    count=0   
+    count=0
     def __init__(self, identifiant,nom,prenom,num_telephone,adresse_mail, annee_entree, cours=[], notes=[]):
         super().__init__(identifiant,nom,prenom,num_telephone,adresse_mail)
-        
+
         if type(annee_entree) == int and annee_entree >= 2014 and annee_entree <= 2022 :
             self.annee_entree=annee_entree
         else :
-            raise Exception("Invalid year of class entry") 
-            
-        self.cours= cours       
+            raise Exception("Invalid year of class entry")
+
+        self.cours= cours
         self.notes= notes
 
         if len(cours)==len(notes):
             pass
         else :
             raise Exception("Each subject needs to have a mark")
-            
+
         Etudiant.count = Etudiant.count + 1 #count number of students
 
-    
+
     def add_cours(self, cours):
 
         if isinstance(cours, Cours) and cours not in self.cours:
-            self.cours.append(cours)            
+            self.cours.append(cours)
         else:
             raise Exception("Invalid course/subject name")
 
@@ -144,7 +144,7 @@ class Etudiant(Personne):
         for note in self.notes :
             if note is None :
                 pass
-            else :                
+            else :
                 total+=note
         print( total/len(self.notes))
 
@@ -168,5 +168,5 @@ class Etudiant(Personne):
             for value in self.notes:
                 res[key] = value
                 self.notes.remove(value)
-                break  
-        return(res) 
+                break
+        return(res)
