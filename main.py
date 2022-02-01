@@ -23,13 +23,13 @@ if __name__ == "__main__":
     etud.calculMoyenneGenerale()
     etud.matieresSansNote()
     print("\n")
-    print("etudiant 1 :")
+    print("Etudiant 1 :")
     etud1 = Etudiant("1340","Sam", "Lee", "12254", "sm@mail.fr", 2017, ["anglais","math", "info"],[14,12,15])
     etud1.afficher_fiche_signaletique()
     etud1.calculMoyenneGenerale()
     etud1.matieresSansNote()
     print("\n")
-    print("etudiant 2 :")
+    print("Etudiant 2 :")
     etud2 = Etudiant("4114","Alain", "Connu", "78554", "al@mail.fr", 2019, ["anglais","math","info"],[0,4,10])
     etud2.afficher_fiche_signaletique()
     etud2.calculMoyenneGenerale()
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     #moyenne par matiere : ( doit normalement etre dans la classe Matriere )
 
-    print("moyennes des matieres entre etudiant 1 et 2 :")
+    print("Moyennes des matiéres entre les étudiants 1 et 2 :")
 
     res1=etud1.to_dict()
     res2=etud2.to_dict()
