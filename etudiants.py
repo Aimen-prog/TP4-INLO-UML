@@ -12,7 +12,7 @@ from collections import Counter
 
 "calculer la moyenne par matière"
 " calculer la moyenne générale d’un élève"
-"afficher les matières sans notes d'un élève". 
+"afficher les matières sans notes d'un élève".
 
 Implémentation en python uniquement les classes permettant de répondre à ces 3 cas d'utilisation.
 
@@ -22,27 +22,26 @@ Implémentation en python uniquement les classes permettant de répondre à ces 
 class Note :
     def __init__(self, note_matiere):
         if note_matiere is None :
-            self.note_matiere=note_matiere       
+            self.note_matiere=note_matiere
         elif type(note_matiere) == float or int:
-            self.note_matiere=note_matiere            
+            self.note_matiere=note_matiere         
         else:
-            raise Exception("Invalid mark, should be numeric")        
+            raise Exception("Invalid mark, should be numeric")
  
     def get_note(self):
         return self._note_matiere
-    
+
     def set_note(self, note):
         self._note_matiere = note
-         
+
     def __str__(self):
         return print(f'{self.note_matiere}')
-
 
 
 class Cours :
     def __init__(self, identifiant_cours, nom_cours ):
         if identifiant_cours is None :
-            self.identifiant_cours=identifiant_cours           
+            self.identifiant_cours=identifiant_cours
         elif type(identifiant_cours) == str and len(identifiant_cours.replace(" ", "")) > 0:
             self.identifiant_cours=identifiant_cours
         else:
@@ -57,15 +56,15 @@ class Cours :
         
     def get_cours(self):
         return self._nom_cours
-        
+
     def set_cours(self, cours):
         self._nom_cours = cours
-        
+
 
 
 
 class Personne:
-    
+
     def __init__(self,identifiant,nom,prenom,num_telephone,adresse_mail):      
         
         if type(identifiant) == str and len(identifiant.replace(" ", "")) > 0:
