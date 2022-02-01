@@ -33,8 +33,8 @@ if __name__ == "__main__":
 
     #moyenne par matiere : ( doit normalement etre dans la classe Matriere )
 
-    res1=etud1.toDict()
-    res2=etud2.toDict()
+    res1=etud1.to_dict()
+    res2=etud2.to_dict()
     moyenne_matiere = dict(Counter(res1)+Counter(res2))
     for keys in moyenne_matiere :
         moyenne_matiere[keys]=moyenne_matiere[keys] / Etudiant.count
