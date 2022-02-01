@@ -66,17 +66,17 @@ class Cours :
 class Personne:
 
     def __init__(self,identifiant,nom,prenom,num_telephone,adresse_mail):      
-        
+    
         if type(identifiant) == str and len(identifiant.replace(" ", "")) > 0:
             self.identifiant = identifiant
         else:
             raise Exception("Invalid id, should be str type")
-        
+
         if type(nom) == str and len(nom.replace(" ", "")) > 0:
             self.nom = nom
         else:
             raise Exception("Invalid last name, should be str type")
-        
+
         if type(prenom) == str and len(prenom.replace(" ", "")) > 0:
             self.prenom = prenom
         else:
@@ -92,8 +92,8 @@ class Personne:
             self.adresse_mail=adresse_mail
         else:
             raise Exception("Invalid e-mail format")
-    
-    
+
+
     def afficher_fiche_signaletique(self):
         print(self.prenom,self.num_telephone,self.adresse_mail)
 
@@ -101,7 +101,7 @@ class Personne:
 
 
 class Etudiant(Personne):
-    
+
     count=0   
     def __init__(self, identifiant,nom,prenom,num_telephone,adresse_mail, annee_entree, cours=[], notes=[]):
         super().__init__(identifiant,nom,prenom,num_telephone,adresse_mail)
@@ -120,7 +120,7 @@ class Etudiant(Personne):
             raise Exception("Each subject needs to have a mark")
             
         Etudiant.count = Etudiant.count + 1 #count number of students
-    
+
     
     def add_cours(self, cours):
 
@@ -129,7 +129,7 @@ class Etudiant(Personne):
         else:
             raise Exception("Invalid course/subject name")
 
-    
+
     def add_note(self, note):
 
         if isinstance(note, Note):
@@ -170,6 +170,3 @@ class Etudiant(Personne):
                 self.notes.remove(value)
                 break  
         return(res) 
-    
-
-
