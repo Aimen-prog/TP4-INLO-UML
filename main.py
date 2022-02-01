@@ -17,17 +17,17 @@ Programme principal
 """
 
 if __name__ == "__main__":
-
+    print("etudiant test avec une note en moins")
     etud = Etudiant("4340","Paul", "Dupont", "54554", "pl@mail.fr", 2019, ["sport","math", "info"],[None,8,1])
     etud.calculMoyenneGenerale()
     etud.matieresSansNote()
     print("\n")
-
+    print("etudiant 1")
     etud1 = Etudiant("1340","Sam", "Lee", "12254", "sm@mail.fr", 2017, ["anglais","math", "info"],[14,12,15])
     etud1.calculMoyenneGenerale()
     etud1.matieresSansNote()
     print("\n")
-
+    print("etudiant 2")
     etud2 = Etudiant("4114","Alain", "Connu", "78554", "al@mail.fr", 2019, ["anglais","math","info"],[0,4,10])
     etud2.calculMoyenneGenerale()
     etud2.matieresSansNote()
@@ -35,7 +35,8 @@ if __name__ == "__main__":
 
 
     #moyenne par matiere : ( doit normalement etre dans la classe Matriere )
-    #Cas seulement 2 etudiants (etud1 et etud2)
+
+    print("moyennes des matieres entre etudiant 1 et 2 ")
 
     res1=etud1.to_dict()
     res2=etud2.to_dict()
