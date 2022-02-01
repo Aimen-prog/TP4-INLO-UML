@@ -35,6 +35,7 @@ if __name__ == "__main__":
 
 
     #moyenne par matiere : ( doit normalement etre dans la classe Matriere )
+    #Cas seulement 2 etudiants (etud1 et etud2)
 
     res1=etud1.to_dict()
     res2=etud2.to_dict()
