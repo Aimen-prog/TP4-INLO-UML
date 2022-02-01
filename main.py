@@ -9,7 +9,7 @@ __author__ = 'Aimen CHERIF'
 
 from collections import Counter
 
-from etudiants import Note, Cours , Personne ,Etudiant
+from etudiants import Etudiant
 
 """
 Programme principal
