@@ -91,7 +91,7 @@ class Personne:
 
 
     def afficher_fiche_signaletique(self):
-        print(self.prenom,self.num_telephone,self.adresse_mail)
+        print("fiche signalétique correspondante:",self.prenom,self.num_telephone,self.adresse_mail)
 
 
 
