@@ -161,7 +161,7 @@ class Etudiant(Personne):
             print(non_note, "is/are subjects(s) with no marks")
 
 
-    def toDict(self) : #moyenne par matiére
+    def to_dict(self) : #transforming subjects and grades to dictionnary
         res = {}
         for key in self.cours:
             for value in self.notes:
