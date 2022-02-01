@@ -22,7 +22,7 @@ if __name__ == "__main__":
     etud1.calculMoyenneGenerale()
     etud1.matieresSansNote()
    
-    etud2 = Etudiant("4114","Alain", "Connu", "54554", "al@mail.fr", 2019, ["anglais","math","info"],[0,None,10])
+    etud2 = Etudiant("4114","Alain", "Connu", "54554", "al@mail.fr", 2019, ["anglais","math","info"],[0,4,10])
     etud2.calculMoyenneGenerale()
     etud2.matieresSansNote()
   
