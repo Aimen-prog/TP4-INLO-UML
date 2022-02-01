@@ -14,6 +14,7 @@ notes d'un élève".
 **Contenu**
 <br>
 Diagramme UML (umbrello) complet avec les classes, variables et méthodes <b>AVANT</b> implémentation
+<br>
 Implémentation en python uniquement des classes permettant de répondre à ces 3 cas d'utilisation. 
 
 Merci d'éxécuter le programme principal <b>main.py</b> comme suit :
