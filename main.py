@@ -31,7 +31,7 @@ if __name__ == "__main__":
     etud2.matieresSansNote()
 
 
-    #moyenne par matiere : ( Normalement dans classe matiére )
+    #moyenne par matiere : ( doit normalement etre dans la classe Matriere )
 
     res1=etud1.toDict()
     res2=etud2.toDict()
