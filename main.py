@@ -38,4 +38,4 @@ if __name__ == "__main__":
     moyenne_matiere = dict(Counter(res1)+Counter(res2))
     for keys in moyenne_matiere :
         moyenne_matiere[keys]=moyenne_matiere[keys] / Etudiant.count
-    print(moyenne_matiere)
+    print("mean for each subject: ", moyenne_matiere)
