@@ -18,6 +18,10 @@ Programme principal
 
 if __name__ == "__main__":
 
+    etud = Etudiant("4340","Paul", "Dupont", "54554", "pl@mail.fr", 2019, ["sport","math", "info"],[None,8,1])
+    etud.calculMoyenneGenerale()
+    etud.matieresSansNote()
+
     etud1 = Etudiant("4340","Paul", "Dupont", "54554", "pl@mail.fr", 2019, ["anglais","math", "info"],[14,12,15])
     etud1.calculMoyenneGenerale()
     etud1.matieresSansNote()
