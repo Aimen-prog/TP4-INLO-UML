@@ -148,7 +148,7 @@ class Etudiant(Personne):
                 pass
             else :
                 total+=note
-        print( total/len(self.notes))
+        print("La moyenne générale est:", total/len(self.notes))
 
 
     def matieresSansNote(self) :  #matieres sans notes de l'eleve
